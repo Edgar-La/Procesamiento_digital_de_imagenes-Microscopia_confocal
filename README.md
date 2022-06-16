@@ -27,8 +27,12 @@
 7. _Tabla_Regiones_ : Contiene el conteo de células por regiones, las columnas son: Regiones (Indica la región en cuestión), Nucleos por region (Cantidad de cpelulas encontradas en la región dada), Area (área total de la región en micras cuadradas), Densidad (división del número de células encontradas entre el área).
 
 ## Manual técnino
-### Separar en canales una imagen .czi
 
+### Contenido de las carpetas
+1. _cell_images_ : En esta carpeta se guarda la separacion automática de los canales de color realizada por el archivo __Main.m__, estas imágenes se usan después para el conteo de células. El usuario no modifica manualmente el contenido de esta carpeta.
+2. _Color_channels_ : En esta carpeta se encuentran las funciones que realizan la separación de canales y extracción de metadatos de las imágenes .czi, la función principal que el código __Main.m__ manda a llamar de aquí se llama __FuncionSepararCanales.m__.
+3. _scripts_ : En esta carpeta se encuentran las funciones que realizan el conteo y clasificación de células, la función principal que el código __Main.m__ manda a llamar de aquí se llama __ContarCelulas.m__.
+4. _Table_graphics_ : Contiene el notebook de Jupyther para realizar la transparencia de imagenes.
 ### Procesar imágenes de los canales
 
 ### Programa de transparencia
