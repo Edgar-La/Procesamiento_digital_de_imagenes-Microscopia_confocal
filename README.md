@@ -1,8 +1,8 @@
 # Procesamiento_digital_de_imagenes-Microscopia_confocal
 
 ## Manual para el usuario
-1. Agregar la imagen que se desa analizar (con extension .czi y cuidando que no tenga mas de 4 canales de color) en las carpetas __\Color_channels\Images__ & __\scripts\Images__
-2. Acceder al archivo __Main.m__ que se encuentra en la raíz del repositorio, este es un script escrito en Matlab
+1. Agregar la imagen que se desa analizar (con extension .czi y cuidando que no tenga mas de 4 canales de color) en la carpeta __\Color_channels\Images__ 
+2. Acceder al archivo __Main.m__ que se encuentra en la raíz del repositorio, este es un script escrito en Matlab.
 3. En este script se debe colocar el nombre de la imagen agregada en el paso 1, este se escribe en la variable _file_name_, el nombre se escribe entre comillas simples y sin la extensión. 
 4. Correr el programa.
 5. De forma automática se creará una carpeta con el nombre de la imagen dentro de la carpeta __Resultados__, como su nombre lo indica aquí se guardarán los resultados de correr el código.
@@ -36,6 +36,8 @@
 ### Procesar imágenes de los canales
 
 ### Programa de transparencia
+La siguiente liga lleva a un código escrito en Python.
+[Programa](https://colab.research.google.com/drive/1_kif6ZDI4omD0EoHoh9EcN5nC4xo2Ftb?usp=sharing)
 
 
 Autores:
