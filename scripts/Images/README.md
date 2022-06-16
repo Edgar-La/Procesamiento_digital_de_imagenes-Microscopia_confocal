@@ -1,1 +1,0 @@
-# Procesamiento_digital_de_imagenes-Microscopia_confocal
