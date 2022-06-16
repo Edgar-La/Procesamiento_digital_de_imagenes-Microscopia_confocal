@@ -33,12 +33,13 @@
 2. _Color_channels_ : En esta carpeta se encuentran las funciones que realizan la separación de canales y extracción de metadatos de las imágenes .czi, la función principal que el código __Main.m__ manda a llamar de aquí se llama __FuncionSepararCanales.m__.
 3. _scripts_ : En esta carpeta se encuentran las funciones que realizan el conteo y clasificación de células, la función principal que el código __Main.m__ manda a llamar de aquí se llama __ContarCelulas.m__.
 4. _Table_graphics_ : Contiene el notebook de Jupyther para realizar la transparencia de imagenes.
-### Procesar imágenes de los canales
 
 ### Programa de transparencia
-La siguiente liga lleva a un código escrito en Python.
-[Programa](https://colab.research.google.com/drive/1_kif6ZDI4omD0EoHoh9EcN5nC4xo2Ftb?usp=sharing)
-
+La siguiente liga lleva a un [programa de transparencia](https://colab.research.google.com/drive/1_kif6ZDI4omD0EoHoh9EcN5nC4xo2Ftb?usp=sharing)
+ escrito en Python. ESte permite superponer 2 imágenes y verificar que tan similares realizando una transparencia entre ellas. No se necesito instalar nada, basta con correrlo, esto gracias a que se encuentra en la plataforma de Google Colab.
+ 1. Lo primero que se debe hacer es cargar las 2 imágenes de interés en la plataforma (ambas deben tener las mismas dimensiones).
+ 2. LO siguiente es colocar el nombre de las 2 imágenes en la sección de __Nombre de las imágenes a analizar__
+ 3. Finalmente darle play a las 3 celdas que están presentes en el notebook.
 
 Autores:
 * [Edgar Lara Arellano](https://github.com/Edgar-La)
