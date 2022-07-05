@@ -234,9 +234,9 @@ elseif size(Canales_Sin_DAPI,1) == 1
 end
 
 % Agregar titulo a la imagen de la funcion
-[Im_Class_1, Tabla_Propiedades_Marcaje_1] = Clasificar_Celulas(Celulas_Divididas, Celulas_Duda, Im_Canal1_seg,  Im1_C, Im_Canal1_gris, Archivo, nombres(1));
-[Im_Class_2, Tabla_Propiedades_Marcaje_2] = Clasificar_Celulas(Celulas_Divididas, Celulas_Duda, Im_Canal2_seg,  Im1_C, Im_Canal2_gris, Archivo, nombres(2));
-[Im_Class_3, Tabla_Propiedades_Marcaje_3] = Clasificar_Celulas(Celulas_Divididas, Celulas_Duda, Im_Canal3_seg,  Im1_C, Im_Canal3_gris, Archivo, nombres(3));
+[Im_Class_1, Tabla_Propiedades_Marcaje_1] = Clasificar_Celulas(Celulas_Divididas, Celulas_Duda, Im_Canal1_seg,  Im1_C, Im_Canal1_gris, Archivo, Escala, nombres(1));
+[Im_Class_2, Tabla_Propiedades_Marcaje_2] = Clasificar_Celulas(Celulas_Divididas, Celulas_Duda, Im_Canal2_seg,  Im1_C, Im_Canal2_gris, Archivo, Escala, nombres(2));
+[Im_Class_3, Tabla_Propiedades_Marcaje_3] = Clasificar_Celulas(Celulas_Divididas, Celulas_Duda, Im_Canal3_seg,  Im1_C, Im_Canal3_gris, Archivo, Escala, nombres(3));
 
 
 

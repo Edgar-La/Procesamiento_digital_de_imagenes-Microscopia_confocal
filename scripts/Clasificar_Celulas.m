@@ -1,10 +1,11 @@
-function [Im_rgb, Tabla_Propiedades] = Clasificar_Celulas(Segmentacion_Celulas, Celulas_Duda, Segmentacion_Canal, Im_C, Im_F, Archivo, nombres)
+function [Im_rgb, Tabla_Propiedades] = Clasificar_Celulas(Segmentacion_Celulas, Celulas_Duda, Segmentacion_Canal, Im_C, Im_F, Archivo, Escala, nombres)
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
 
 [L, n, stats, Tabla] = Calcular_Propiedades(Segmentacion_Celulas);
 Num = [1:n]';
 area = stats.Area;
+area = area.* (Escala(1) * Escala(2));
 eje_Mayor = stats.MajorAxisLength;
 eje_Menor = stats.MinorAxisLength;
 orientacion = stats.Orientation;
@@ -49,6 +50,7 @@ for i = 1:n
      porcentaje_a(i,1) = (Area_P*100)/Area_C;
      a_protenia(i,1) = Area_P;
 end
+a_protenia = a_protenia.*  (Escala(1) * Escala(2));
 
 % Im_rgb(:, :, 2) = Im_rgb(:, :, 2) - Im_rgb(:, :, 2).*Celulas_Duda;
 % Im_rgb(:, :, 3) = Im_rgb(:, :, 3) - Im_rgb(:, :, 3).*Celulas_Duda;
@@ -63,7 +65,7 @@ if isempty(Num)
      p_o_n = [];
 end
 Tabla_Propiedades = table(Num, area, a_protenia, porcentaje_a, eje_Mayor, eje_Menor, orientacion, Inten_media_nucleo', Inten_media_proteina', p_o_n');
-Tabla_Propiedades.Properties.VariableNames = {'Elemento','Area','Area proteina dentro de celuala','Porcentaje proteina dentro de celula', 'Eje mayor', 'Eje menor', 'Orientacion', 'Inten_media nucleo', 'Inten_media_proteina','Estado'};
+Tabla_Propiedades.Properties.VariableNames = {'Elemento','Area (micras cuadradas)','Area marcaje dentro de celula (micras cuadradas)','Porcentaje marcaje dentro de celula', 'Eje mayor', 'Eje menor', 'Orientacion', 'Inten_media marcaje_nuclear', 'Inten_media_marcaje','Estado'};
 
 end
 
