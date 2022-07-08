@@ -3,7 +3,7 @@
 ## Como empezar a utilizar el programa
 1. Primero vamos a descargar el repositorio en .zip para ello es necesario dar click en el botón verde que dice 'code' y casi hasta el final de las opciones que aparece dar click en 'Download ZIP'
 2. Cuando este en nuestra computadora lo guardamos en una carpeta y ahí le damos click derecho al archivo, y vamos a seleccionar la opción que dice 'descomprimir aquí' o una opción similar.
-3. Para poder acceder a esta herramienta necesitamos tener instalado Matlab, una vez dentro de esta aplicación podemos teclear 'Ctrl + o' o podemos ir a 'File' y seleccionar la opción de 'Open File', aquí tendremos una interfaz que nos permite navegar en nuestros archivos e iremos a la carpeta donde descomprimimos el archivo que descargamos de Github y seleccionamos el archivo 'Main.m' 
+3. Para poder acceder a esta herramienta necesitamos tener instalado Matlab, una vez dentro de esta aplicación podemos teclear 'Ctrl + o' o podemos ir a la opción 'Open' que se encuentra en la barra superior de Matlab, aquí tendremos una interfaz que nos permite navegar en nuestros archivos e iremos a la carpeta donde descomprimimos el archivo que descargamos de Github y seleccionamos el archivo 'Main.m' 
 
 ## Manual de uso rápido
 1. Agregar la imagen que se desa analizar (con extension .czi y cuidando que no tenga mas de 4 canales de color) en la carpeta __\Color_channels\Images__ 
